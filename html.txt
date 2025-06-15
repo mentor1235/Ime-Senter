@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veien Inkludert - Integrasjonsplattform</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- SOS-knapp -->
+    <button class="sos-btn" id="sosBtn">
+        <i class="fas fa-life-ring"></i>
+    </button>
+
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <i class="fas fa-hands-helping"></i>
+                <h1>Veien Inkludert</h1>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">Hjem</a></li>
+                    <li><a href="#">Systemforståelse</a></li>
+                    <li><a href="#">Arbeidsliv</a></li>
+                    <li><a href="#">Rettigheter</a></li>
+                    <li><a href="#">Ressurser</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                </ul>
+            </nav>
+            
+            <div class="language-switcher">
+                <button class="lang-btn active">NO</button>
+                <button class="lang-btn">EN</button>
+                <button class="lang-btn">AR</button>
+                <button class="lang-btn">SO</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Resten av HTML-koden fra tidligere -->
+    <!-- ... (Hero, Features, How it works, etc.) ... -->
+    
+    <!-- Footer -->
+    <footer>
+        <!-- ... (Footer content) ... -->
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

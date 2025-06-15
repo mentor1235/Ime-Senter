@@ -1,0 +1,17 @@
+# Gå til prosjektmappen i terminalen
+cd veien-inkludert
+
+# Initialiser git
+git init
+
+# Legg til filer
+git add .
+
+# Lag første commit
+git commit -m "Initial commit"
+
+# Koble til GitHub-repoet (erstatt <URL> med din repo-URL)
+git remote add origin https://github.com/<ditt-brukernavn>/veien-inkludert.git
+
+# Last opp koden
+git push -u origin master
