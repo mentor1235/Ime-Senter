@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - Ime Senter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-hands-helping"></i>
+                <h1>Ime Senter</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Hjem</a></li>
+                    <li><a href="om-oss.html">Om Oss</a></li>
+                    <li><a href="ressurser.html">Ressurser</a></li>
+                    <li><a href="kontakt.html" class="active">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="page-header">
+            <h1>Kontakt Oss</h1>
+            <p>Har du spørsmål eller trenger hjelp? Vi er her for deg</p>
+        </section>
+
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2><i class="fas fa-map-marker-alt"></i> Besøk Oss</h2>
+                <p>Integrasjonsveien 15<br>0165 Oslo</p>
+                
+                <h2><i class="fas fa-clock"></i> Åpningstider</h2>
+                <p>Mandag - Fredag: 09:00 - 16:00<br>Lørdag: 10:00 - 14:00<br>Søndag: Stengt</p>
+                
+                <h2><i class="fas fa-phone"></i> Telefon</h2>
+                <p>+47 22 33 44 55</p>
+                
+                <h2><i class="fas fa-envelope"></i> E-post</h2>
+                <p>hjelp@imesenter.no</p>
+            </div>
+            
+            <div class="contact-form">
+                <h2>Send oss en melding</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Fullt navn</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">E-postadresse</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Emne</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Velg emne</option>
+                            <option value="språk">Språkhjelp</option>
+                            <option value="arbeid">Arbeid og CV</option>
+                            <option value="rettigheter">Rettigheter</option>
+                            <option value="diskriminering">Diskrimineringsrapport</option>
+                            <option value="annet">Annet</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Melding</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Send melding
+                    </button>
+                </form>
+            </div>
+        </div>
+        
+        <section class="map-section">
+            <h2><i class="fas fa-map-marked-alt"></i> Vår lokasjon</h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2000.123456789012!2d10.746091!3d59.912726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTnCsDU0JzQ1LjgiTiAxMMKwNDQnNDEuOSJF!5e0!3m2!1sno!2sno!4v1234567890123!5m2!1sno!2sno" 
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                </iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Ime Senter</h3>
+                    <p>Din vei til trygg integrering i Norge</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Kontaktinformasjon</h3>
+                    <p><i class="fas fa-envelope"></i> kontakt@imesenter.no</p>
+                    <p><i class="fas fa-phone"></i> +47 12 34 56 78</p>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2023 Ime Senter. Frivillig organisasjon.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Takk for din melding! Vi kontakter deg så snart som mulig.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
