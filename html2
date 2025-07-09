@@ -1,4 +1,17 @@
-<head>
+<head<header>
+    <div class="container">
+        <div class="logo">
+            <i class="fas fa-hands-helping"></i>
+            <h1>Ime Senter</h1>
+        </div>
+        <nav>
+            <a href="index.html">Hjem</a>
+            <a href="cv-builder.html">CV-bygger</a>
+            <a href="resources.html">Ressurser</a>
+            <a href="contact.html">Kontakt</a>
+        </nav>
+    </div>
+</header>>
     <!-- Eksempel for forsiden -->
     <meta name="description" 
           content="Ime Senter hjelper nyankomne i Norge med språk, arbeid og rettigheter. 
