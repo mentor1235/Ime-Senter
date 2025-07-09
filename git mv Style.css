@@ -1,4 +1,4 @@
-/* ===== CONTACT PAGE STYLES ===== */
+<link rel="stylesheet" href="style.css">/* ===== CONTACT PAGE STYLES ===== */
 .contact-methods {
     display: flex;
     gap: 40px;
